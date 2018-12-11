@@ -4,7 +4,7 @@ Example api rest using Node.js and Express
 ## Running the project
 
 ```
-$ git clone https://github.com/wilsonfilhodev/restify-api.git
+$ git clone https://github.com/wilsonfilhodev/api-express-example.git
 $ cd express-app
 $ npm install
 $ npm start
