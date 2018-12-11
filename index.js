@@ -10,7 +10,8 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
-app.use(require('./routes'))
+require('./src/controllers/AuthController')(app)
+require('./src/controllers/ProjectController')(app)
 
 app.listen(config.port, () => {
     console.log('Server runing in port ',config.port)

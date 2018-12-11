@@ -6,4 +6,5 @@ module.exports = {
 	db: {
 		uri: process.env.MONGODB_URI || 'mongodb://root:root1234@ds131814.mlab.com:31814/api-express',
 	},
+	secret: '6edf2bf3ea8ea58db62a685aa8830889'
 };
