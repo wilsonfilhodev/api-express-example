@@ -12,7 +12,8 @@ $ npm start
 
 ## Examples
 
-* **GET** http://localhost:3000/alunos (*Get all students*)
+* **POST** http://localhost:3000/auth/register (*Create new user*)
+* **POST** http://localhost:3000/auth/authenticate (*Authenticate in api and return token*)
 * **GET** http://localhost:3000/alunos/ID_ONE_ALUNO (*Get student*)
 * **POST** http://localhost:3000/alunos (*Create student*)
 * **DELETE** http://localhost:3000/alunos/ID_ONE_ALUNO (*Delete one student*)
