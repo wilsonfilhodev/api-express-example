@@ -1,5 +1,5 @@
 # api-express-example
-Example api rest using Node.js and Express
+Example api rest using Node.js, Express, Mongoose and Jwt
 
 ## Running the project
 
