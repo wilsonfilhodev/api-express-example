@@ -13,18 +13,51 @@ $ npm start
 ## Examples
 
 * **POST** http://localhost:3000/auth/register (*Create new user*)
-Fields required: name, email and password
+```
+
+  Example data: (all fields in example is required)
+  
+  {
+    "name": "Wilson Filho",
+    "email": "will@email.com",
+    "password": "123456"
+  }
+  
+```
+
 * **POST** http://localhost:3000/auth/authenticate (*Authenticate in api and return token*)
+```
+
+  Example data: (all fields in example is required)
+  
+  {
+    "email": "will@email.com",
+    "password": "123456"
+  }
+  
+```
+
+* **POST** http://localhost:3000/auth/forgot-password (*Authenticate in api and return token*)
+```
+
+  Example data: (all fields in example is required)
+  
+  {
+    "email": "will@email.com"
+  }
+  
+```
+
+***Atencion:*** This request sends an email with a token to reset the password. We use mailtrap as the mail server in this project. Configure the e-mail data in the config.js file to receive the e-mail correctly.
 
 * **GET** http://localhost:3000/projects/ (*Get projects*)
 * **GET** http://localhost:3000/projects/ID_PROJECT (*Get one project*)
 * **POST** http://localhost:3000/projects (*Create student*)
 ```
 
-  Example data:
+  Example data: (all fields in example is required)
   
   {
-	
     "title": "My project",
     "description": "Project description",
     "tasks": [{
