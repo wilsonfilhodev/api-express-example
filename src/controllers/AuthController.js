@@ -80,7 +80,7 @@ async function forgotPassword(req, res) {
         
         mailer.sendMail({
             to: email,
-            from: 'will.filho@gmail.com',
+            from: 'will.filho27@gmail.com',
             template: 'auth/forgot-password',
             context: { token }
         }, (error) => {
